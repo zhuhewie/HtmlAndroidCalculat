@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0032)http://localhost:8080/jsandroid/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store,no-cache">
+    <meta name="Handheldfriendly" content="true">
+    <meta name="robots" content="all">
+    <meta name="keywords" contect="doodle, mobile, doodlemobile, game, games">
+    <meta name="description" content="Make People&#39;s Mobile Life More Connected Through Games.">
+
+    <title>加法计算器</title>
+
+    <script type="text/javascript" language="javascript">
+	
+	function showHtmlcallJava(){
+		var str = window.jsObj.HtmlcallJava();
+		alert(str);
+	}
+	
+	function showHtmlcallJava2(){
+	    var a = document.getElementById("a").value;
+	    var b = document.getElementById("b").value;
+	    var algorithm = document.getElementById("select_algorithm").value;
+		var str = window.jsObj.HtmlcallJava2(String(algorithm),String(a),String(b));
+		document.getElementById("result").value = str;
+	}
+
+	function showFromHtml(){
+		document.getElementById("id_input").value = "Java call Html";
+	}
+	
+	function showFromHtml2( param ){
+		document.getElementById("id_input2").value = "Java call Html : " + param; 
+	}
+
+
+    </script>
+
+
+</head>
+<body>
+<br>
+<br>
+<input id="a" style="width: 90%;height: 35px" type="number" value="" required="true"/>
+<br>
+<br>
+<select id="select_algorithm" style="width: 50%;height: 40px">
+    <option>加</option>
+    <option>减</option>
+    <option>乘</option>
+    <option>除</option>
+</select>
+
+<br>
+<br>
+
+<input id="b" style="width: 90%; height: 35px" type="number" value=""/>
+<br>
+<br>
+<br>
+<input type="button" style="width: 90%; height: 35px" value="等于" onclick="showHtmlcallJava2()"/>
+
+<br>
+<br>
+<input id="result" style="width: 90%; height: 35px" type="button" value="结果"/>
+<br>
+<br>
+
+
+</body>
+
+
+</html>
+
